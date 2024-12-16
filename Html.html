@@ -7,15 +7,20 @@
     <title>Star Rating</title>
     <link rel="stylesheet" href="Css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
 </head>
 
 <body>
-    <div class="container">
+    <div class="typing-text">
+        <header>Your opinion matters to us</header>
+    </div>
+    <div class="container-1">
         <div class="post">
             <div class="text">Thanks for rating us!</div>
             <div class="edit">EDIT</div>
         </div>
-        <div class="star-widget">
+        <div class="star-widget-1">
             <input type="radio" name="rate" id="rate-5">
             <label for="rate-5" class="fas fa-star"></label>
             <input type="radio" name="rate" id="rate-4">
@@ -40,18 +45,204 @@
     <script>
         const btn = document.querySelector("button");
         const post = document.querySelector(".post");
-        const widget = document.querySelector(".star-widget");
+        const widget = document.querySelector(".star-widget-1");
         const editBtn = document.querySelector(".edit");
 
         btn.onclick = () => {
             widget.style.display = "none";
             post.style.display = "block";
-
             editBtn.onclick = () => {
                 widget.style.display = "block";
                 post.style.display = "none";
                 return false;
-            };
+            }
+        }
+    </script>
+    </section>
+    <!--\\\\\\\\\\\the comment start\\\\\\\\\\\\\\\\\\-->
+    <div class="testimonial-heading">
+        <span>comments</span>
+        <h1 style="background-color: rgb(255, 255, 255); color: black;">Clients says</h1>
+    </div>
+    <div class="testimonials-box-container">
+        <div class="testimonials-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="1bb3838c-e5a8-4278-8b01-5997dd912112.jpeg" alt="">
+                    </div>
+                    <div class="name-user">
+                        <strong>Ahmed Mossad</strong>
+                        <br>
+                        <span>@ahmedmoo88@gmail.com</span>
+                    </div>
+                </div>
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5">&#9733;</label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4">&#9733;</label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3">&#9733;</label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2">&#9733;</label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1">&#9733;</label>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos atque eveniet optio
+                    ducimus doloremque numquam dolores ea aliquid provident recusandae, saepe, minima
+                    reiciendis nisi fugit perspiciatis vero ratione voluptas.</p>
+            </div>
+        </div>
+        <div class="testimonials-box" data-aos="fade-up">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="9325a4c0-6173-4636-a9bc-4686a48e498e.jpeg" alt="">
+                    </div>
+                    <div class="name-user">
+                        <strong>Karam Gaser</strong>
+                        <br>
+                        <span>@karemoo0@gmail.com</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <span data-value="5">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="1">★</span>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos atque eveniet optio
+                    ducimus doloremque numquam dolores ea aliquid provident recusandae, saepe, minima
+                    reiciendis nisi fugit perspiciatis vero ratione voluptas.</p>
+            </div>
+        </div>
+        <div class="testimonials-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="Jaqueta de couro_ 20 ideias para usar no look masculino.jpeg" alt="">
+                    </div>
+                    <div class="name-user">
+                        <strong>Mohamed Adel</strong>
+                        <br>
+
+                        <span>@mohamedadel@gmail.com</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <span data-value="5">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="1">★</span>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos atque eveniet optio
+                    ducimus doloremque numquam dolores ea aliquid provident recusandae, saepe, minima
+                    reiciendis nisi fugit perspiciatis vero ratione voluptas.</p>
+            </div>
+        </div>
+        <div class="testimonials-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="Discover The Sophisticated Undercut Men From All Over The World Sport Proudly.jpeg"
+                            alt="">
+                    </div>
+                    <div class="name-user">
+                        <strong>Ali Saeed</strong>
+                        <br>
+                        <span>@alisaaed2@gmail.com</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <div class="star-rating">
+                        <span data-value="5">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="1">★</span>
+                    </div>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos atque eveniet optio
+                    ducimus doloremque numquam dolores ea aliquid provident recusandae, saepe, minima
+                    reiciendis nisi fugit perspiciatis vero ratione voluptas.</p>
+            </div>
+        </div>
+        <div class="testimonials-box-container">
+            <div class="testimonials-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="1bb3838c-e5a8-4278-8b01-5997dd912112.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Ahmed Mossad</strong>
+                            <br>
+                            <span>@ahmedmoo88@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="star-widget">
+                        <input type="radio" name="rate" id="rate-5">
+                        <label for="rate-5">&#9733;</label>
+                        <input type="radio" name="rate" id="rate-4">
+                        <label for="rate-4">&#9733;</label>
+                        <input type="radio" name="rate" id="rate-3">
+                        <label for="rate-3">&#9733;</label>
+                        <input type="radio" name="rate" id="rate-2">
+                        <label for="rate-2">&#9733;</label>
+                        <input type="radio" name="rate" id="rate-1">
+                        <label for="rate-1">&#9733;</label>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos atque eveniet optio
+                        ducimus doloremque numquam dolores ea aliquid provident recusandae, saepe, minima
+                        reiciendis nisi fugit perspiciatis vero ratione voluptas.</p>
+                </div>
+            </div>
+            <div class="testimonials-box" data-aos="fade-up">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="9325a4c0-6173-4636-a9bc-4686a48e498e.jpeg" alt="">
+                        </div>
+                        <div class="name-user">
+                            <strong>Karam Gaser</strong>
+                            <br>
+                            <span>@karemoo0@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <span data-value="5">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="1">★</span>
+                    </div>
+                </div>
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos atque eveniet optio
+                        ducimus doloremque numquam dolores ea aliquid provident recusandae, saepe, minima
+                        reiciendis nisi fugit perspiciatis vero ratione voluptas.</p>
+                </div>
+            </div>
+
+        </div>
+        </main>
+
+</body>
+
+</html>
             return false;
         };
     </script>
