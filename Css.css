@@ -12,8 +12,16 @@ html, body {
     text-align: center;
     background: #ffffff;
 }
-
-.container {
+.typing-text{
+font-size: 2.2rem;
+    font-weight: 500;
+    color: #000000;
+    background: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-1 {
     width: 400px;
     position: relative;
     background: #111;
@@ -26,17 +34,17 @@ html, body {
     flex-direction: column;
 }
 
-.container .post {
+.container-1 .post {
     display: none;
 }
 
-.container .text {
+.container-1 .text {
     font-size: 25px;
     color: #666;
     font-weight: 500;
 }
 
-.container .edit {
+.container-1 .edit {
     position: absolute;
     right: 10px;
     top: 5px;
@@ -47,11 +55,11 @@ html, body {
     text-decoration: underline;
 }
 
-.container .star-widget input {
+.container-1 .star-widget-1 input {
     display: none;
 }
 
-.star-widget label {
+.star-widget-1 label {
     font-size: 40px;
     color: #444;
     padding: 10px;
@@ -74,7 +82,7 @@ input#rate-5:checked ~ label {
 }
 
 #rate-1:checked ~ form header:before {
-    content: "I just hate it 😠";
+    content: " I just hate it 😠";
 }
 
 #rate-2:checked ~ form header:before {
@@ -93,7 +101,7 @@ input#rate-5:checked ~ label {
     content: "I just love it 😍";
 }
 
-.container form {
+.container-1 form {
     display: none;
 }
 
@@ -150,4 +158,178 @@ form .btn button {
 
 form .btn button:hover {
     background: #1b1b1b;
+}
+/* ////////////////////////// */
+#testimonials-box-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color:#000000;
+    background-position: center;
+    background-size: cover;
+ }
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #000000;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonials-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonials-box{
+    width: 500px;
+    box-shadow: 2px 2px 3px white;
+    background-color: #000000;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    display: flex;
+    direction: rtl; 
+    cursor: pointer;
+}
+.reviews span{
+    font-size: 30px; 
+    color: #f5c518; 
+}
+/* ////////////test1////////////// */
+.star-widget {
+    display: inline-flex;
+}
+
+.star-widget input {
+    display: none; /* إخفاء الراديو */
+}
+
+.star-widget label {
+    font-size: 2rem;
+    color: #f5c518; /* اللون الافتراضي للنجوم */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* التأثير عند التمرير */
+.star-widget label:hover,
+.star-widget label:hover ~ label {
+    color: #f5c518; /* اللون عند التمرير */
+}
+
+/* تثبيت التقييم عند النقر */
+.star-widget input:checked ~ label {
+    color: #f5c518; /* لون النجوم المثبتة */
+}
+/* ////////////////////////// */
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+@media(max-width:1060px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width: 100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+}
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #000000;
+}
+/* تنسيق زر القلب */
+.heart-section {
+    margin-top: 10px;
+}
+.testimonials-box {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testimonials-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+body {
+    background: linear-gradient(135deg, #11d275, #e0e7ff);
 }
